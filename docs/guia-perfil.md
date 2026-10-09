@@ -14,6 +14,8 @@ El perfil de GitHub de SIS-INF sirve como carta de presentación oficial de la c
 
 ## Mensaje institucional
 
+El software desarrollado por la carrera pertenece a la comunidad institucional y se publica como software libre para beneficio de todos. El código es público y utiliza la licencia MIT, que permite a cualquier persona usarlo, estudiarlo, modificarlo y compartirlo. Los proyectos son construidos de manera conjunta por docentes y estudiantes, promoviendo la colaboración y el aprendizaje. El lema institucional es: «Software libre institucional, desarrollado por docentes y estudiantes» / «Institutional free and open-source software, built by faculty and students».
+
 ## Tono de redacción
 
 ## Paleta de colores
