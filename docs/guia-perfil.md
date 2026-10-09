@@ -60,3 +60,17 @@ Para mantener coherencia visual y accesibilidad, se aplican las siguientes regla
 -  Evita combinaciones excesivas de emojis o íconos en una misma línea.
 
 ## Estructura del README
+
+El README del perfil de GitHub de SIS-INF se organiza en las siguientes secciones, en este orden:
+
+1. **Encabezado:** Presenta el nombre de SIS-INF y una breve identificación de la carrera.
+2. **Idioma:** Define el idioma principal del contenido del README y, cuando corresponda, incluye la versión en inglés.
+3. **Cifras:** Muestra estadísticas relevantes del perfil, como cantidad de repositorios, colaboradores u otros indicadores definidos para el perfil. Esta sección es generada automáticamente por la Action.
+4. **Carrera:** Presenta información general sobre la carrera de Ingeniería de Sistemas e Informática.
+5. **Carreras:** Describe las carreras o programas académicos relacionados con SIS-INF.
+6. **Proyectos:** Presenta los proyectos disponibles en los repositorios de la organización. Esta sección es generada automáticamente por la Action.
+7. **Lenguajes:** Muestra los lenguajes de programación utilizados en los proyectos del perfil. Esta sección es generada automáticamente por la Action.
+8. **Colaboradores:** Reconoce a las personas que contribuyen en los proyectos de SIS-INF. Esta sección es generada automáticamente por la Action.
+9. **Participar:** Explica cómo estudiantes, docentes y otras personas pueden contribuir a los proyectos de la comunidad. Esta sección es generada automáticamente por la Action.
+10. **Contacto:** Proporciona los medios oficiales para comunicarse con SIS-INF.
+11. **Pie:** Incluye información complementaria, enlaces institucionales y otros elementos finales del README.
