@@ -1,0 +1,18 @@
+
+{
+  "usuario": "sis-inf",
+  "repos_excluidos": [
+    "proyecto-base",
+    "sis-inf"
+  ],
+  "topic_exclusion": "no-perfil",
+  "cuentas_excluidas": [
+    "sis-inf"
+  ],
+  "top_colaboradores": 20,
+  "max_primeras_issues": 5,
+  "readmes": {
+    "README.md": "es",
+    "README.en.md": "en"
+  }
+}
