@@ -1,0 +1,40 @@
+name: Propuesta de contenido
+description: Proponer nuevo contenido o cambios de texto para el perfil o documentación.
+title: "[Contenido]: <escribe un breve título>"
+labels: ["docs"]
+body:
+  - type: input
+    id: seccion
+    attributes:
+      label: Sección
+      description: ¿En qué sección o archivo se propone el cambio?
+      placeholder: "ej. docs/guia-perfil.md > Sección Público"
+    validations:
+      required: true
+  - type: dropdown
+    id: idioma
+    attributes:
+      label: Idioma
+      description: ¿En qué idioma está el contenido propuesto?
+      options:
+        - Español
+        - Inglés
+        - Portugués
+    validations:
+      required: true
+  - type: textarea
+    id: texto-propuesto
+    attributes:
+      label: Texto propuesto
+      description: Escribe el texto exacto que propones agregar o modificar.
+      render: markdown
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente del dato
+      description: Si la información proviene de un documento oficial o estadística, indícalo aquí.
+      placeholder: "ej. Resolución Rectoral N° 123/2024"
+    validations:
+      required: true
