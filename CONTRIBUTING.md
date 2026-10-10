@@ -27,3 +27,17 @@ Antes de enviar cambios al archivo `README.md`, es importante comprobar que su c
 3. Cambiar el tema a **Dark**.
 4. Regresar al README y comprobar que el texto, los enlaces y las imágenes sean legibles.
 5. Repetir la comprobación con el tema **Light** para verificar que el contenido se visualice correctamente en ambos modos.
+
+## Reglas de edición del README
+
+Para mantener organizada la documentación del repositorio, se deben seguir estas reglas al modificar los archivos `README.md` y `README.en.md`:
+
+1. **Marcadores de sección:** El marcador `<!-- seccion:X -->` identifica una sección del README. La letra `X` representa el nombre o identificador de esa sección. Se deben respetar estos marcadores para mantener la estructura del documento.
+
+2. **Bloques automáticos:** El marcador `<!-- auto:X -->` indica el inicio de un bloque generado automáticamente y `<!-- /auto:X -->` indica su final. Nunca se debe editar manualmente el contenido que se encuentra entre ambos marcadores.
+
+3. **Una sección por Pull Request:** Cada PR debe modificar únicamente una sección del README, evitando cambios en otras partes del documento.
+
+4. **Consistencia entre idiomas:** Los archivos `README.md` y `README.en.md` deben contener las mismas secciones y mantener el mismo orden, aunque estén escritos en idiomas diferentes.
+
+5. **Revisión de cambios:** Antes de enviar un PR, se debe comprobar que los marcadores se hayan respetado y que solamente se haya modificado la sección correspondiente.
