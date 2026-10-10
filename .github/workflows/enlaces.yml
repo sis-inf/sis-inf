@@ -1,0 +1,20 @@
+name: Enlaces rotos
+
+on:
+  pull_request:
+  schedule:
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  enlaces:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress '**/*.md'
+          fail: true
+          token: ${{ secrets.GITHUB_TOKEN }}
