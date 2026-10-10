@@ -59,7 +59,7 @@ def main():
 
     # 6. Actualizar READMEs
     readmes = config.get("readmes", {})
-    for idioma, ruta_relativa_readme in readmes.items():
+    for ruta_relativa_readme, idioma in readmes.items():
         ruta_readme = os.path.join(DIR_RAIZ, ruta_relativa_readme)
         
         if not os.path.exists(ruta_readme):
@@ -101,3 +101,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
