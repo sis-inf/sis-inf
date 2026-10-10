@@ -1,0 +1,44 @@
+name: "Error visual"
+description: "Reportar un problema visual en el proyecto."
+title: "[Error visual]: "
+labels: ["fix"]
+
+body:
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "¿Qué se ve mal?"
+      description: "Describe el problema visual que encontraste."
+      placeholder: "Explica qué elemento se muestra incorrectamente."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: modo
+    attributes:
+      label: "Modo"
+      description: "Selecciona dónde ocurre el problema."
+      options:
+        - "Claro"
+        - "Oscuro"
+        - "Móvil"
+    validations:
+      required: true
+
+  - type: textarea
+    id: captura
+    attributes:
+      label: "Captura de pantalla"
+      description: "Adjunta una captura que muestre el error visual."
+      placeholder: "Arrastra o pega aquí la captura de pantalla."
+    validations:
+      required: true
+
+  - type: input
+    id: navegador
+    attributes:
+      label: "Navegador"
+      description: "Indica el navegador donde ocurre el problema."
+      placeholder: "Ejemplo: Google Chrome"
+    validations:
+      required: true
