@@ -17,4 +17,5 @@ jobs:
         with:
           args: --no-progress '**/*.md'
           fail: true
+          failIfEmpty: false
           token: ${{ secrets.GITHUB_TOKEN }}
