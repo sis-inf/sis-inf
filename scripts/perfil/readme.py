@@ -1,4 +1,4 @@
-﻿"""Utilidades de manipulación de texto para el README del perfil.
+"""Utilidades de manipulación de texto para el README del perfil.
 
 Solo manipulación de texto: no lee ni escribe archivos, no usa red.
 """
