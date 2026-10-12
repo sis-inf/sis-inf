@@ -1,49 +1,16 @@
-<!-- seccion:encabezado -->
-<!-- /seccion:encabezado -->
 
-<!-- seccion:idioma -->
-<!-- /seccion:idioma -->
-
-<!-- seccion:cifras -->
-<!-- auto:cifras -->
-<!-- /auto:cifras -->
-<!-- /seccion:cifras -->
-
-<!-- seccion:carrera -->
-## 🎓 Sobre la carrera
-<!-- /seccion:carrera -->
+## Hi there 👋
 
 <!-- seccion:carreras -->
+<!-- CAREERS:START -->
 ## 📚 Nuestras carreras
+
+| Carrera | Qué hace el profesional | Plan de estudios |
+|---|---|---|
+| Ingeniería de Sistemas | Está capacitado para analizar procesos organizacionales, modelar soluciones informáticas integrales y liderar la implementación de sistemas complejos e infraestructura. | [Malla oficial FNI-UTO](https://fni.uto.edu.bo/carrera/ingenieria-de-sistemas/) - [Fuente](https://github.com/sis-inf/sis-inf/blob/dev/docs/investigacion-carrera.md) |
+| Ingeniería Informática | Estudia los fundamentos científicos y técnicos para la concepción, análisis, diseño, desarrollo y mantenimiento de soluciones de software. | [Malla oficial FNI-UTO](https://fni.uto.edu.bo/carrera/ingenieria-informatica/) - [Fuente](https://github.com/sis-inf/sis-inf/blob/dev/docs/investigacion-carrera.md) |
+<!-- CAREERS:END -->
 <!-- /seccion:carreras -->
-
-<!-- seccion:proyectos -->
-## 🚀 Proyectos
-<!-- /seccion:proyectos -->
-
-<!-- seccion:lenguajes -->
-## 💻 Lenguajes
-<!-- /seccion:lenguajes -->
-
-<!-- seccion:colaboradores -->
-## 🏆 Colaboradores
-<!-- /seccion:colaboradores -->
-
-<!-- seccion:participar -->
-## 🤝 Cómo participar
-<!-- /seccion:participar -->
-
-<!-- seccion:contacto -->
-## 📫 Contacto
-<!-- /seccion:contacto -->
-
-<!-- seccion:pie -->
----
-
-<p align="center">Software libre institucional · Hecho con 💙 por docentes y estudiantes de Ingeniería de Sistemas e Ingeniería Informática – FNI – UTO · <a href="https://github.com/sis-inf/sis-inf/blob/main/LICENSE">Licencia</a></p>
-<!-- /seccion:pie -->
-
-<!-- INICIO: carrera -->
 
 ## 🎓 Sobre la carrera
 
@@ -58,3 +25,4 @@ Posteriormente, el 1 de septiembre de 1997, se consolidó nuevamente la Carrera 
 *Fuente:* [Investigación sobre la carrera](https://github.com/sis-inf/sis-inf/blob/dev/docs/investigacion-carrera.md)
 
 <!-- FIN: carrera -->
+
