@@ -1,47 +1,15 @@
-<!-- seccion:encabezado -->
-<!-- /seccion:encabezado -->
 
-<!-- seccion:idioma -->
-<!-- /seccion:idioma -->
+### Hi there 👋
 
-<!-- seccion:cifras -->
-<!-- auto:cifras -->
-<!-- /auto:cifras -->
-<!-- /seccion:cifras -->
-
-<!-- seccion:carrera -->
-## 🎓 Sobre la carrera
-<!-- /seccion:carrera -->
-
-<!-- seccion:carreras -->
-## 📚 Nuestras carreras
-<!-- /seccion:carreras -->
-
-<!-- seccion:proyectos -->
-## 🚀 Proyectos
-<!-- /seccion:proyectos -->
-
-<!-- seccion:lenguajes -->
-## 💻 Lenguajes
-<!-- /seccion:lenguajes -->
-
-<!-- seccion:colaboradores -->
-## 🏆 Colaboradores
-<!-- /seccion:colaboradores -->
-
+Repositorio Institucional de la Carrera de Ingeniería de Sistemas e Ingeniería Informática de la Facultad Nacional de Ingeniería - Universidad Técnica de Oruro.
 <!-- seccion:participar -->
 ## 🤝 Cómo participar
-<!-- /seccion:participar -->
 
-<!-- seccion:contacto -->
-## 📫 Contacto
-<!-- /seccion:contacto -->
-
-<!-- seccion:pie -->
----
+¿Quieres aportar al proyecto?
+Te invitamos a empezar por los issues con la etiqueta good first issue, ideales para tu primera contribución. Consulta la guía de colaboración en [CONTRIBUTING.md](https://github.com/sis-inf/sis-inf/blob/main/CONTRIBUTING.md) y la [guía de primeros pasos](https://github.com/sis-inf/sis-inf/blob/main/CONTRIBUTING.md#primeros-pasos) para conocer el flujo de trabajo.
 
 <p align="center">Software libre institucional · Hecho con 💙 por docentes y estudiantes de Ingeniería de Sistemas e Ingeniería Informática – FNI – UTO · <a href="https://github.com/sis-inf/sis-inf/blob/main/LICENSE">Licencia</a></p>
-<!-- /seccion:pie -->
+<!-- /seccion:participar -->
 
 <!-- INICIO: carrera -->
 
