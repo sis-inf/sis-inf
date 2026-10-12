@@ -1,16 +1,15 @@
-## Hi there 👋
+<!-- seccion:encabezado -->
+# SIS-INF
+<!-- /seccion:encabezado -->
 
-<!--
-**sis-inf/sis-inf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- seccion:colaboradores -->
+## 👥 Colaboradores
 
-Here are some ideas to get you started:
+Agradecemos a los docentes y estudiantes que colaboran para mantener y mejorar este proyecto. A continuación se muestran los 20 colaboradores con más aportes; cada PR aceptado y cada commit directo a `main` cuenta como 1 aporte.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!-- readme:collaborators -start -->
+<!-- readme:collaborators -end -->
+
+Para saber cómo aportar, consulta la [guía de contribución](https://github.com/sis-inf/sis-inf/blob/main/CONTRIBUTING.md).
+
+<!-- /seccion:colaboradores -->
