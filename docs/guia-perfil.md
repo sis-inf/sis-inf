@@ -1,6 +1,7 @@
 # Guía del perfil de GitHub de SIS-INF
 
 ## Objetivo del perfil
+
 El perfil de GitHub de SIS-INF sirve como carta de presentación oficial de la carrera de Ingeniería de Sistemas e Informática. Su objetivo principal es mostrar al público que los proyectos desarrollados son software libre institucional, creados colaborativamente por docentes y estudiantes. Además, busca reconocer y dar visibilidad a quienes contribuyen activamente en la comunidad. A través de este espacio, se fomenta el espíritu colaborativo y el aprendizaje práctico en herramientas de control de versiones.
 
 ## Público
@@ -14,27 +15,71 @@ El perfil de GitHub de SIS-INF sirve como carta de presentación oficial de la c
 
 ## Mensaje institucional
 
+El software desarrollado por la carrera pertenece a la comunidad institucional y se publica como software libre para beneficio de todos. El código es público y utiliza la licencia MIT, que permite a cualquier persona usarlo, estudiarlo, modificarlo y compartirlo. Los proyectos son construidos de manera conjunta por docentes y estudiantes, promoviendo la colaboración y el aprendizaje. El lema institucional es: «Software libre institucional, desarrollado por docentes y estudiantes» / «Institutional free and open-source software, built by faculty and students».
+
 ## Tono de redacción
 
+El tono de redacción debe ser institucional, claro y cercano. Utilizamos la primera persona del plural («nosotros») para comunicar que formamos parte de una comunidad de docentes y estudiantes. Evitamos un lenguaje excesivamente formal, distante o técnico cuando no sea necesario.
+
+### Ejemplos en español
+
+* **Correcto:** «Desarrollamos software libre para nuestra comunidad.»
+* **Incorrecto:** «La institución desarrolla soluciones informáticas para los usuarios.»
+* **Correcto:** «Compartimos nuestros proyectos para que puedan ser estudiados y mejorados.»
+* **Incorrecto:** «Los usuarios deberán proceder a la utilización de los recursos disponibles.»
+* **Correcto:** «Te invitamos a conocer y colaborar con nuestros proyectos.»
+* **Incorrecto:** «Se invita a los interesados a participar en las actividades correspondientes.»
+
+### Examples in English
+
+* **Correct:** “We develop free software for our community.”
+* **Incorrect:** “The institution develops software solutions for users.”
+* **Correct:** “We share our projects so they can be studied and improved.”
+* **Incorrect:** “Users shall proceed with the utilization of the available resources.”
+* **Correct:** “We invite you to learn about and contribute to our projects.”
+* **Incorrect:** “Interested parties are invited to participate in the corresponding activities.”
+
 ## Paleta de colores
+
+Para mantener la coherencia visual con la interfaz de GitHub y garantizar el contraste en temas claro y oscuro, se utilizan los siguientes colores autorizados:
+
+- **Fondo Oscuro:** `#0d1117` y `#161b22`
+- **Texto Principal (Claro):** `#f0f6fc`
+- **Texto Secundario / Gris:** `#8b949e`
+- **Color Primario / Acento:** `#58a6ff` (en modo oscuro) / `#0969da` (en modo claro)
+- **Bordes y Marca de Agua Ajustada (Contraste AA):** `#30363d` y `#484f58`
 
 ## Reglas para imágenes
 
 Para mantener consistencia visual y accesibilidad, se aplican las siguientes reglas:
 
--  **Formato preferido:** SVG, por su escalabilidad y compatibilidad.
--  **Tamaño máximo:** 200 KB por archivo.
--  **Texto alternativo:** obligatorio en todas las imágenes.
--  **Recursos externos:** no se permiten dentro de los SVG.
--  **Versiones:** cada banner debe tener versión clara y oscura.
+- **Formato preferido:** SVG, por su escalabilidad y compatibilidad.
+- **Tamaño máximo:** 200 KB por archivo.
+- **Texto alternativo:** obligatorio en todas las imágenes.
+- **Recursos externos:** no se permiten dentro de los SVG.
+- **Versiones:** cada banner debe tener versión clara y oscura.
 
 ## Uso de emojis e íconos
 
 Para mantener coherencia visual y accesibilidad, se aplican las siguientes reglas:
 
--  Usa **un emoji solo al inicio** de cada título de sección.
--  No coloques emojis en medio del texto o párrafos.
--  Los íconos deben ser simples y representar claramente su función.
--  Evita combinaciones excesivas de emojis o íconos en una misma línea.
+- Usa **un emoji solo al inicio** de cada título de sección.
+- No coloques emojis en medio del texto o párrafos.
+- Los íconos deben ser simples y representar claramente su función.
+- Evita combinaciones excesivas de emojis o íconos en una misma línea.
 
 ## Estructura del README
+
+El README del perfil de GitHub de SIS-INF se organiza en las siguientes secciones, en este orden:
+
+1. **Encabezado:** Presenta el nombre de SIS-INF y una breve identificación de la carrera.
+2. **Idioma:** Define el idioma principal del contenido del README y, cuando corresponda, incluye la versión en inglés.
+3. **Cifras:** Muestra estadísticas relevantes del perfil, como cantidad de repositorios, colaboradores u otros indicadores definidos para el perfil. Esta sección es generada automáticamente por la Action.
+4. **Carrera:** Presenta información general sobre la carrera de Ingeniería de Sistemas e Informática.
+5. **Carreras:** Describe las carreras o programas académicos relacionados con SIS-INF.
+6. **Proyectos:** Presenta los proyectos disponibles en los repositorios de la organización. Esta sección es generada automáticamente por la Action.
+7. **Lenguajes:** Muestra los lenguajes de programación utilizados en los proyectos del perfil. Esta sección es generada automáticamente por la Action.
+8. **Colaboradores:** Reconoce a las personas que contribuyen en los proyectos de SIS-INF. Esta sección es generada automáticamente por la Action.
+9. **Participar:** Explica cómo estudiantes, docentes y otras personas pueden contribuir a los proyectos de la comunidad. Esta sección es generada automáticamente por la Action.
+10. **Contacto:** Proporciona los medios oficiales para comunicarse con SIS-INF.
+11. **Pie:** Incluye información complementaria, enlaces institucionales y otros elementos finales del README.

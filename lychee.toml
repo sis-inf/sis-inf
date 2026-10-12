@@ -1,0 +1,12 @@
+# Número máximo de reintentos al verificar enlaces.
+max_retries = 3
+
+# Códigos HTTP aceptados para evitar falsos positivos.
+accept = ["200", "429"]
+
+# Se excluye img.shields.io porque puede bloquear verificadores de enlaces.
+# Se excluyen los avatares PNG de GitHub porque pueden generar falsos positivos.
+exclude = [
+  'https?://img\.shields\.io/.*',
+  'https?://github\.com/[^/]+\.png(?:\?.*)?'
+]
