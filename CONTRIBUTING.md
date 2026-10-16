@@ -95,6 +95,28 @@ Para mantener organizada la documentación del repositorio, se deben seguir esta
 
 5. **Revisión de cambios:** Antes de enviar un PR, se debe comprobar que los marcadores se hayan respetado y que solamente se haya modificado la sección correspondiente.
 
+Todo cambio en el repositorio parte de una issue y se integra mediante un Pull Request. El flujo es el siguiente:
+
+1. *Tomar una issue:* elegir una issue abierta en la pestaña *Issues* y leer su contexto, los archivos que se deben modificar, la rama de trabajo y los criterios de aceptación.
+
+2. *Crear la rama:* crear desde main la rama con el nombre exacto que indica la issue en el apartado «Rama de trabajo». Si la issue indica otra rama base, se debe partir de esa.
+
+   bash
+   git checkout main
+   git pull origin main
+   git checkout -b docs/nombre-de-la-rama
+   
+
+3. *Hacer el cambio:* modificar únicamente los archivos y secciones que indica la issue. Después, registrar el cambio con un commit que siga el formato tipo: descripción y subir la rama.
+
+   bash
+   git add ruta/del/archivo.md
+   git commit -m "docs: descripción breve del cambio"
+   git push -u origin docs/nombre-de-la-rama
+   
+
+4. *Abrir el Pull Request:* en GitHub, pulsar *Compare & pull request*, elegir la rama de destino que indique la issue y completar la plantilla. En la descripción se debe escribir Closes #N, donde N es el número de la issue. Así el PR queda vinculado a la issue, y esta se cierra automáticamente cuando el PR se integra en la rama principal.
+
 ## Revisión y merge de Pull Requests
 
 Antes de integrar los cambios en el proyecto, cada Pull Request debe pasar por un proceso de revisión para comprobar que cumple los requisitos del repositorio.
