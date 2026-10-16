@@ -1,3 +1,6 @@
+Aquí tienes el documento completo **`docs/investigacion-carrera.md`** actualizado con la sección redactada correctamente:
+
+```markdown
 # Investigación sobre la carrera
 
 ## Historia
@@ -42,4 +45,8 @@ El profesional en Ingeniería Informática posee un criterio técnico-científic
 
 ## Logo y permisos de uso
 
+Existe un logo oficial de la Carrera de Ingeniería de Sistemas e Informática de la Facultad Nacional de Ingeniería (FNI - UTO), el cual se encuentra disponible en los portales institucionales web oficiales. Sin embargo, no se cuenta con una autorización explícita para su distribución y uso en repositorios públicos de GitHub. Por este motivo, se deja constancia de que **no se utiliza el logo oficial en este repositorio**.
+
 ## Fuentes
+
+```
