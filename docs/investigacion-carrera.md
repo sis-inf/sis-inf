@@ -13,10 +13,10 @@ Posteriormente, el 1 de septiembre de 1997, se consolidó nuevamente la Carrera 
 
 ## Hitos
 
-- **1984**: La Carrera de Ingeniería de Sistemas e Informática comenzó a funcionar con una orientación inicial hacia la Ingeniería Informática. [Fuente: [Historia SIS-INF](https://www.sisinf.fni.uto.edu.bo/historia/)]
-- **1987**: La orientación curricular fue reestructurada hacia la Ingeniería de Sistemas para responder a las necesidades del medio. [Fuente: [Historia SIS-INF](https://www.sisinf.fni.uto.edu.bo/historia/)]
-- **1988**: La Carrera de Ingeniería de Sistemas se consolidó mediante la Resolución 43/88, del 16 de junio de 1988. [Fuente: [Historia SIS-INF](https://www.sisinf.fni.uto.edu.bo/historia/)]
-- **2024**: Se creó la cuenta oficial `sis-inf` en GitHub el 6 de octubre de 2024. [Fuente: [API de GitHub](https://api.github.com/users/sis-inf)]
+- **1984**: La Carrera de Ingeniería de Sistemas e Informática comenzó a funcionar con una orientación inicial hacia la Ingeniería Informática. Fuente: [Historia SIS-INF](https://www.sisinf.fni.uto.edu.bo/historia/)
+- **1987**: La orientación curricular fue reestructurada hacia la Ingeniería de Sistemas para responder a las necesidades del medio. Fuente: [Historia SIS-INF](https://www.sisinf.fni.uto.edu.bo/historia/)
+- **1988**: La Carrera de Ingeniería de Sistemas se consolidó mediante la Resolución 43/88, del 16 de junio de 1988. Fuente: [Historia SIS-INF](https://www.sisinf.fni.uto.edu.bo/historia/)
+- **2024**: Se creó la cuenta oficial `sis-inf` en GitHub el 6 de octubre de 2024. Fuente: [API de GitHub](https://api.github.com/users/sis-inf)
 
 ## Ingeniería de Sistemas
 
@@ -43,3 +43,21 @@ El profesional en Ingeniería Informática posee un criterio técnico-científic
 ## Logo y permisos de uso
 
 ## Fuentes
+
+### Enlaces oficiales
+
+- [Historia de la Carrera de Ingeniería de Sistemas e Informática – FNI/UTO](https://www.sisinf.fni.uto.edu.bo/historia/)
+- [Plan de Estudios de Ingeniería de Sistemas – FNI/UTO](https://www.fni.uto.edu.bo/index.php/carreras/ing-sistemas)
+- [Plan de Estudios de Ingeniería Informática – FNI/UTO](https://www.sisinf.fni.uto.edu.bo/informatica/)
+- [Universidad Técnica de Oruro](https://www.uto.edu.bo/)
+
+### Documentos y resoluciones
+
+- Universidad Técnica de Oruro. (2018). *Guía Académica 2018*.
+- Resolución del Honorable Consejo Universitario 108/84, de 24 de julio de 1984.
+- Resolución del Honorable Consejo Universitario 043/88, de 16 de junio de 1988.
+- Resolución del Honorable Consejo Universitario 059/97, de 1 de septiembre de 1997.
+
+### Entrevistas
+
+No se realizaron entrevistas para esta investigación.

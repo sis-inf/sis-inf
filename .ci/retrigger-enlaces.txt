@@ -1,0 +1,3 @@
+ci: re-trigger enlaces check
+
+Este archivo fue agregado automáticamente para forzar la re-ejecución del workflow de enlaces porque no se encontró la referencia rota en los archivos modificados del PR.
