@@ -1,4 +1,15 @@
 <!-- seccion:encabezado -->
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sis-inf/sis-inf/dev/assets/banner-oscuro.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sis-inf/sis-inf/dev/assets/banner-claro.svg">
+  <img alt="sis-inf banner" src="https://raw.githubusercontent.com/sis-inf/sis-inf/dev/assets/banner-claro.svg" width="100%">
+</picture>
+
+**English** | [Español](https://github.com/sis-inf/sis-inf/blob/main/README.md)
+
+</div>
 <!-- /seccion:encabezado -->
 
 <!-- seccion:idioma -->
