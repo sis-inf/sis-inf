@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente de fondo claro -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F8FA" />
+      <stop offset="100%" stop-color="#EAEEF2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1200" height="300" rx="12" fill="url(#bgGradient)" stroke="#D0D7DE" stroke-width="2"/>
+
+  <!-- Adornos vectoriales sutiles -->
+  <circle cx="1100" cy="50" r="120" fill="#0969DA" opacity="0.05" />
+  <circle cx="100" cy="250" r="80" fill="#0969DA" opacity="0.05" />
+
+  <!-- Sigla principal -->
+  <text x="600" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="bold" fill="#0969DA" text-anchor="middle">
+    SIS-INF
+  </text>
+
+  <!-- Nombre de la carrera -->
+  <text x="600" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="600" fill="#1F2328" text-anchor="middle">
+    Ingeniería de Sistemas e Informática
+  </text>
+
+  <!-- Facultad y Universidad -->
+  <text x="600" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#57606A" text-anchor="middle">
+    FNI — UTO
+  </text>
+
+  <!-- Lema corto -->
+  <text x="600" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#0969DA" text-anchor="middle" letter-spacing="1">
+    Software libre • Open source
+  </text>
+</svg>

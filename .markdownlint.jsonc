@@ -1,0 +1,12 @@
+{
+  "default": true,
+
+  // MD013: Se desactiva porque el README contiene líneas largas.
+  "MD013": false,
+
+  // MD033: Se desactiva porque el README utiliza HTML en línea.
+  "MD033": false,
+
+  // MD041: Se desactiva porque el README comienza con un banner.
+  "MD041": false
+}
