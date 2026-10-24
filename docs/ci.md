@@ -1,5 +1,9 @@
 # Integración continua (CI)
 
+## Qué revisa cada workflow
+
+## Cómo correrlo localmente
+
 ## Qué hacer si falla
 
 ### Cómo leer el log de un check fallido
