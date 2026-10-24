@@ -9,6 +9,7 @@
 <!-- /seccion:encabezado -->
 
 <!-- seccion:idioma -->
+**🇪🇸 Español** · [🇬🇧 English](https://github.com/sis-inf/sis-inf/blob/main/README.en.md)
 <!-- /seccion:idioma -->
 
 <!-- seccion:cifras -->
