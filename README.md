@@ -12,6 +12,8 @@
 <!-- /seccion:idioma -->
 
 <!-- seccion:cifras -->
+Nuestra comunidad en cifras: el software libre que construimos juntos, docentes y estudiantes.
+
 <!-- auto:cifras -->
 <!-- /auto:cifras -->
 <!-- /seccion:cifras -->
