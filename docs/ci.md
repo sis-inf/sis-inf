@@ -1,5 +1,13 @@
 # Integración continua (CI)
 
+## Qué revisa cada workflow
+
+| Workflow | Cuándo corre | Qué revisa |
+|---|---|---|
+| `markdown-lint` | En cada Pull Request y en cada push a `main`. | Que todos los archivos `.md` del repositorio cumplan las reglas de `.markdownlint.jsonc`. |
+| `Enlaces rotos` | En cada Pull Request y todos los lunes a las 06:00 UTC. | Que los enlaces de todos los archivos `.md` respondan; falla si alguno no lo hace. La configuración está en `lychee.toml`. |
+| `Pruebas Python` | En los Pull Requests que cambian archivos de `scripts/`, `tests/`, `config/` o `pyproject.toml`. | Que `pytest -q` pase con Python 3.12. |
+| `actualizar-perfil` | Todos los días a las 06:00 UTC y a mano desde **Actions > Run workflow**. | No revisa nada: ejecuta `scripts/actualizar_perfil.py` para regenerar los bloques automáticos de `README.md` y `README.en.md`. Si hubo cambios, hace commit y push a `main`. |
 ## Qué hacer si falla
 
 ### Cómo leer el log de un check fallido
