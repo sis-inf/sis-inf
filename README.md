@@ -13,6 +13,7 @@
 
 <!-- seccion:cifras -->
 <!-- auto:cifras -->
+Información actualizada para el bloque **cifras** (es). Total repos: 2
 <!-- /auto:cifras -->
 <!-- /seccion:cifras -->
 
