@@ -51,6 +51,65 @@ Cada **Pull Request aceptado** cuenta como 1 aporte, y cada **commit directo a l
 
 ## Al publicar un proyecto privado
 
+Por defecto, el perfil solo muestra repositorios **públicos**. Un proyecto privado aparece en el perfil recién cuando se hace público. Antes de publicarlo, sigue estos pasos en orden.
+
+### 1. Revisar que el historial no tenga contraseñas ni claves
+
+Al hacer público un repositorio se expone todo su historial, no solo los archivos actuales. Un secreto que se borró en un commit antiguo sigue siendo visible. Busca contraseñas, tokens, llaves de API, archivos `.env`, claves privadas y cadenas de conexión a bases de datos.
+
+Una revisión rápida desde la terminal, en todas las ramas y commits:
+
+```powershell
+git --no-pager log --all -i -p -G "password|secret|token|api_key|PRIVATE KEY"
+```
+
+Para una revisión más completa se puede usar una herramienta como gitleaks o trufflehog.
+
+Si encuentras un secreto:
+
+1. Revócalo o cámbialo de inmediato en el servicio que lo emitió. Se debe dar por comprometido aunque se elimine del historial.
+2. Limpia el historial (por ejemplo con `git filter-repo`) o crea un repositorio nuevo sin el historial anterior.
+3. No hagas público el repositorio hasta que la revisión salga limpia.
+
+### 2. Confirmar que tenga una licencia MIT
+
+Un repositorio sin licencia no es software libre aunque sea público: por defecto todos los derechos quedan reservados. Verifica que exista un archivo `LICENSE` en la raíz con el texto de la licencia MIT, con el año y el nombre correctos. Si no existe, en GitHub pulsa **Add file > Create new file**, escribe `LICENSE` como nombre y elige la plantilla **MIT License**.
+
+### 3. Hacerlo público
+
+1. Abre **Settings** del repositorio.
+2. En la sección **Danger Zone**, pulsa **Change repository visibility**.
+3. Elige **Make public** y confirma.
+
+Requiere permisos de administración. También se puede hacer con GitHub CLI:
+
+```powershell
+gh repo edit sis-inf/nombre-del-repo --visibility public --accept-visibility-change-consequences
+```
+
+Comprueba además que el repositorio no tenga el topic `no-perfil` ni esté en `repos_excluidos`; de lo contrario no aparecerá aunque sea público (ver «Cómo excluir un repositorio»).
+
+### 4. Ejecutar el workflow a mano
+
+Si no lo ejecutas, el proyecto aparece en la siguiente ejecución diaria, a las 06:00 UTC.
+
+1. Abre la pestaña **Actions** del repositorio del perfil.
+2. Selecciona el workflow `actualizar-perfil.yml` en la barra lateral.
+3. Pulsa **Run workflow**.
+
+Con GitHub CLI:
+
+```powershell
+gh workflow run actualizar-perfil.yml --repo sis-inf/sis-inf
+```
+
+### 5. Verificar que aparezca
+
+1. Espera a que la ejecución termine con la marca verde en **Actions**.
+2. Abre el perfil de la organización y confirma que el proyecto aparece en el bloque «Proyectos» y que los números de `cifras` subieron.
+3. Si no aparece, revisa que la ejecución no haya fallado, que el repositorio sea público y que no esté excluido. Si el contenido generado no cambió, la Action no crea ningún commit.
+
+
 ## Limitaciones
 
 ### Los workflows programados se desactivan tras 60 días sin actividad
