@@ -1,10 +1,48 @@
+Probablemente la tarjeta del archivo no se te mostró, así que te pego el código completo aquí para que lo copies.
+
+## Dónde va
+El código **reemplaza todo el contenido** del archivo que ya existe en tu clon:
+
+```
+sis-inf/scripts/perfil/consultas.py
+```
+
+Si clonaste en Documentos, la ruta completa es `~/Documents/sis-inf/scripts/perfil/consultas.py`. No crees un archivo nuevo ni lo pongas en otra carpeta.
+
+## Cómo ponerlo
+1. En Git Bash, entra al clon y confirma que estás en la rama correcta:
+   ```bash
+   cd ~/Documents/sis-inf
+   git branch
+   ```
+   Debe verse `* fix/consultas-manejo-timeouts`.
+2. Abre el archivo en tu editor. Con VS Code:
+   ```bash
+   code scripts/perfil/consultas.py
+   ```
+   (Si no tienes el comando `code`, abre VS Code, luego **File > Open Folder** y elige la carpeta `sis-inf`. En el panel izquierdo abre `scripts` > `perfil` > `consultas.py`.)
+3. Selecciona todo el contenido con **Ctrl + A** y bórralo.
+4. Pega el código de abajo con **Ctrl + V** y guarda con **Ctrl + S**.
+5. Verifica con `git status`. Debe aparecer solo `scripts/perfil/consultas.py` como modificado.
+
+## Código completo
+
+```python
 """Consultas GraphQL y REST a la API de GitHub para las secciones del perfil.
 
 Obtiene aportes (PRs y commits), lenguajes de repositorios y primeras issues.
 """
 
-from typing import Any, Dict, List, Optional, Tuple
+import logging
+from typing import Any, Callable, Dict, List, Optional, Tuple
 from urllib.parse import urlencode
+
+import requests
+
+logger = logging.getLogger(__name__)
+
+# Intentos totales por petición individual ante un Timeout (1 inicial + reintentos).
+MAX_INTENTOS = 2
 
 QUERY_PRS = """
 query($owner: String!, $name: String!, $cursor: String) {
@@ -40,13 +78,53 @@ query($owner: String!, $name: String!, $cursor: String) {
 """
 
 
+def _con_reintentos(llamada: Callable[[], Any], descripcion: str) -> Any:
+    """Ejecuta una petición y reintenta si vence el tiempo de espera.
+
+    Captura únicamente requests.exceptions.Timeout (incluye ConnectTimeout y
+    ReadTimeout). Si se agotan los intentos devuelve None, que los llamadores
+    tratan como una respuesta vacía, para no interrumpir la generación.
+
+    Args:
+        llamada: Función sin argumentos que realiza la petición.
+        descripcion (str): Texto para identificar la petición en los logs.
+
+    Returns:
+        Any: La respuesta de la petición o None si todos los intentos fallan.
+    """
+    for intento in range(1, MAX_INTENTOS + 1):
+        try:
+            return llamada()
+        except requests.exceptions.Timeout:
+            logger.warning(
+                "Timeout en %s (intento %d/%d)", descripcion, intento, MAX_INTENTOS
+            )
+    logger.error(
+        "Se agotaron los intentos en %s; se continúa con un valor por defecto",
+        descripcion,
+    )
+    return None
+
+
 def _rest(cliente: Any, endpoint: str) -> Any:
     """Ejecuta una consulta REST (GET) con el cliente.
 
     Si el cliente expone otro nombre de método para REST, solo hay que
-    cambiarlo aquí.
+    cambiarlo aquí. Ante un Timeout reintenta y, si no hay éxito, devuelve None.
     """
-    return cliente.rest(endpoint)
+    return _con_reintentos(lambda: cliente.rest(endpoint), f"REST {endpoint}")
+
+
+def _graphql(
+    cliente: Any, query: str, variables: Dict[str, Any], descripcion: str
+) -> Any:
+    """Ejecuta una consulta GraphQL con el cliente.
+
+    Ante un Timeout reintenta y, si no hay éxito, devuelve None.
+    """
+    return _con_reintentos(
+        lambda: cliente.graphql(query, variables), f"GraphQL {descripcion}"
+    )
 
 
 def _repositorio(respuesta: Any) -> Optional[Dict[str, Any]]:
@@ -66,12 +144,16 @@ def _repositorio(respuesta: Any) -> Optional[Dict[str, Any]]:
 def _prs_fusionados(
     cliente: Any, repo: str, owner: str, name: str
 ) -> List[Dict[str, Any]]:
-    """Devuelve los PRs MERGED de un repositorio, paginando de 100 en 100."""
+    """Devuelve los PRs MERGED de un repositorio, paginando de 100 en 100.
+
+    Si una página agota los intentos por Timeout, se detiene la paginación y
+    se devuelven los PRs obtenidos hasta ese momento.
+    """
     prs: List[Dict[str, Any]] = []
     cursor = None
     while True:
         variables = {"owner": owner, "name": name, "cursor": cursor}
-        respuesta = cliente.graphql(QUERY_PRS, variables)
+        respuesta = _graphql(cliente, QUERY_PRS, variables, f"PRs de {repo}")
         conexion = (_repositorio(respuesta) or {}).get("pullRequests")
         if not conexion:
             break
@@ -95,13 +177,16 @@ def _commits_directos(
     """Devuelve los commits directos de la rama por defecto de un repositorio.
 
     Descarta los que llegaron por un PR, los de fusión y los que no tienen
-    cuenta de GitHub vinculada (author.user nulo).
+    cuenta de GitHub vinculada (author.user nulo). Si una página agota los
+    intentos por Timeout, se devuelven los commits obtenidos hasta ese momento.
     """
     commits: List[Dict[str, Any]] = []
     cursor = None
     while True:
         variables = {"owner": owner, "name": name, "cursor": cursor}
-        respuesta = cliente.graphql(QUERY_COMMITS, variables)
+        respuesta = _graphql(
+            cliente, QUERY_COMMITS, variables, f"commits de {repo}"
+        )
         rama = (_repositorio(respuesta) or {}).get("defaultBranchRef") or {}
         historial = (rama.get("target") or {}).get("history")
         if not historial:
@@ -133,7 +218,8 @@ def obtener_aportes(
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
     """Obtiene los PRs fusionados y los commits directos de los repositorios.
 
-    Usa GraphQL con paginación de 100 en 100.
+    Usa GraphQL con paginación de 100 en 100. Ante un Timeout reintenta la
+    petición; si no hay éxito, continúa con los datos ya obtenidos.
 
     Args:
         cliente: Cliente con el método graphql(query, variables).
@@ -165,7 +251,9 @@ def obtener_lenguajes(
 ) -> Dict[str, Dict[str, int]]:
     """Obtiene los bytes por lenguaje de cada repositorio.
 
-    Llama al endpoint REST '/repos/{owner}/{repo}/languages'.
+    Llama al endpoint REST '/repos/{owner}/{repo}/languages'. Si la petición
+    de un repositorio agota los intentos por Timeout, ese repositorio queda
+    con un diccionario vacío.
 
     Args:
         cliente: Cliente REST.
@@ -188,7 +276,8 @@ def obtener_lenguajes(
 def obtener_primeras_issues(cliente: Any, usuario: str) -> Dict[str, Any]:
     """Busca las issues abiertas con la etiqueta 'good first issue' del usuario.
 
-    Usa la búsqueda REST '/search/issues'.
+    Usa la búsqueda REST '/search/issues'. Si la petición agota los intentos
+    por Timeout, devuelve {'total': 0, 'items': []}.
 
     Args:
         cliente: Cliente REST.
@@ -216,3 +305,4 @@ def obtener_primeras_issues(cliente: Any, usuario: str) -> Dict[str, Any]:
         )
 
     return {"total": respuesta.get("total_count", 0), "items": items}
+```
