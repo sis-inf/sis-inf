@@ -1,3 +1,4 @@
+
 <!-- seccion:encabezado -->
 <div align="center">
 
@@ -17,12 +18,11 @@
 <!-- /seccion:idioma -->
 
 <!-- seccion:cifras -->
-<!-- /seccion:cifras -->
+Our community in numbers: the free software we build together, faculty and students.
 
-<!-- seccion:carrera -->
-## 🎓 About us
 <!-- auto:cifras -->
 <!-- /auto:cifras -->
+<!-- /seccion:cifras -->
 
 <!-- seccion:carrera -->
 ## 🎓 About us
@@ -36,44 +36,16 @@ The Systems and Computer Engineering program at the National Faculty of Engineer
 <!-- /seccion:carrera -->
 
 <!-- seccion:carreras -->
-<!-- seccion:cifras -->
-Our community in numbers: the free software we build together, faculty and students.
-
-<!-- auto:cifras -->
-<!-- /auto:cifras -->
-<!-- /seccion:cifras -->
-
-<!-- seccion:carrera -->
-<!-- /seccion:carrera -->
-
-<!-- seccion:carreras -->
 ## 📚 Our degrees
 
 | Degree | What the professional does | Curriculum |
 | --- | --- | --- |
-| Systems Engineering | Analyzes organizational processes, models comprehensive IT solutions and leads the management of information technologies. | [Curriculum](https://www.fni.uto.edu.bo/index.php/carreras/ing-sistemas) |
-| Computer Engineering | Develops complex logical structures, works with programming languages and leads software projects involving large volumes of data. | [Curriculum](https://www.sisinf.fni.uto.edu.bo/informatica/) |
-<!-- /seccion:carreras -->
-
-<!-- auto:proyectos -->
-<!-- /auto:proyectos -->
-
-<!-- auto:lenguajes -->
-<!-- /auto:lenguajes -->
-
-<!-- auto:colaboradores -->
-<!-- /auto:colaboradores -->
-
-<!-- auto:participar -->
-<!-- /auto:participar -->
+| Systems Engineering | Analyzes organizational processes, models comprehensive IT solutions, and leads the management of information technologies. | [Curriculum](https://www.fni.uto.edu.bo/index.php/carreras/ing-sistemas) |
+| Computer Engineering | Develops complex logical structures, works with programming languages, and leads software projects involving large volumes of data. | [Curriculum](https://www.sisinf.fni.uto.edu.bo/informatica/) |
 <!-- /seccion:carreras -->
 
 <!-- seccion:proyectos -->
 ## 🚀 Projects
-<!-- /seccion:proyectos -->
-
-<!-- seccion:lenguajes -->
-## 💻 Languages
 
 All our projects are institutional free software released under the MIT license, built by faculty and students of our program, and anyone can use, study, and improve them. The list below updates itself automatically.
 
@@ -83,7 +55,6 @@ All our projects are institutional free software released under the MIT license,
 
 <!-- seccion:lenguajes -->
 ## 💻 Languages
-
 The percentages below show the distribution of code by programming language across all public projects.
 
 <!-- auto:lenguajes -->
@@ -92,24 +63,6 @@ The percentages below show the distribution of code by programming language acro
 
 <!-- seccion:colaboradores -->
 ## 🏆 Contributors
-<!-- /seccion:colaboradores -->
-
-<!-- seccion:participar -->
-## 🤝 Get involved
-
-We welcome contributions from students, faculty, and anyone interested in improving our open-source projects. Start by exploring issues labeled [good first issue](https://github.com/sis-inf/sis-inf/labels/good%20first%20issue). Before contributing, please read our [Contributing Guide](https://github.com/sis-inf/sis-inf/blob/main/CONTRIBUTING.md) to learn how to participate.
-
-<!-- auto:primeras-issues -->
-<!-- /auto:primeras-issues -->
-
-<!-- /seccion:participar -->
-
-<!-- seccion:contacto -->
-## 📫 Contact
-<!-- /seccion:contacto -->
-
-<!-- seccion:pie -->
-<!-- /seccion:pie -->
 
 Thank you to the faculty and students who contribute to our projects. The list below shows the 20 people with the most contributions, where each accepted pull request and each direct commit to main counts as one.
 
@@ -118,19 +71,24 @@ Thank you to the faculty and students who contribute to our projects. The list b
 <!-- /seccion:colaboradores -->
 
 <!-- seccion:participar -->
+## 🤝 Get involved
+
+We welcome contributions from students, faculty, and anyone interested in improving our open-source projects. Start by exploring issues labeled [good first issue](https://github.com/sis-inf/sis-inf/labels/good%20first%20issue). Before contributing, please read our [Contributing Guide](https://github.com/sis-inf/sis-inf/blob/main/CONTRIBUTING.md) to learn how to participate.
+
+<!-- auto:participar -->
+<!-- /auto:participar -->
+
+<!-- auto:primeras-issues -->
+<!-- /auto:primeras-issues -->
 <!-- /seccion:participar -->
 
 <!-- seccion:contacto -->
-
 ## 📫 Contact
 
-- **Website:** <https://github.com/sis-inf>
-
+- **Website:** [GitHub organization](https://github.com/sis-inf)
 <!-- /seccion:contacto -->
 
 <!-- seccion:pie -->
-<!-- /seccion:pie -->
-<!-- /seccion:pie -->
 ---
 
 <p align="center">Institutional open-source software · Made with 💙 by faculty and students of Systems Engineering and Informatics Engineering – FNI – UTO · <a href="https://github.com/sis-inf/sis-inf/blob/main/LICENSE">License</a></p>
