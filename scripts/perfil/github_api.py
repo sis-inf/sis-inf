@@ -22,6 +22,29 @@ class ClienteGitHub:
         """
         self.token = token
         self.base_url = "https://api.github.com"
+        self._cuota_disponible: dict[str, int | None] = {
+            "restante": None,
+            "reinicio": None,
+        }
+
+    def obtener_cuota_disponible(self) -> dict[str, int | None]:
+        return self._cuota_disponible.copy()
+
+    def _actualizar_cuota(self, cabeceras: Any) -> None:
+        cabeceras = {
+            nombre.lower(): valor for nombre, valor in (cabeceras or {}).items()
+        }
+        for campo, cabecera in (
+            ("restante", "x-ratelimit-remaining"),
+            ("reinicio", "x-ratelimit-reset"),
+        ):
+            try:
+                valor = int(cabeceras.get(cabecera))
+            except (TypeError, ValueError):
+                valor = None
+            self._cuota_disponible[campo] = (
+                valor if valor is not None and valor >= 0 else None
+            )
 
     def _hacer_peticion(
         self,
@@ -50,16 +73,16 @@ class ClienteGitHub:
 
         intentos = 3
         for intento in range(intentos):
-            req = urllib.request.Request(
-                url, data=data, headers=headers, method=metodo
-            )
+            req = urllib.request.Request(url, data=data, headers=headers, method=metodo)
             try:
                 with urllib.request.urlopen(req) as respuesta:
+                    self._actualizar_cuota(respuesta.headers)
                     cuerpo = respuesta.read().decode("utf-8")
                     link_header = respuesta.headers.get("Link")
                     json_data = json.loads(cuerpo) if cuerpo else {}
                     return json_data, link_header
             except urllib.error.HTTPError as e:
+                self._actualizar_cuota(e.headers)
                 status = e.code
                 error_msg = e.read().decode("utf-8", errors="ignore")
                 try:
@@ -80,9 +103,7 @@ class ClienteGitHub:
                         f"Error de cliente {status}: {mensaje_gh}"
                     ) from e
                 else:
-                    raise RuntimeError(
-                        f"Error HTTP {status}: {mensaje_gh}"
-                    ) from e
+                    raise RuntimeError(f"Error HTTP {status}: {mensaje_gh}") from e
             except urllib.error.URLError as e:
                 if intento < intentos - 1:
                     time.sleep(2**intento)
@@ -91,9 +112,7 @@ class ClienteGitHub:
 
         raise RuntimeError("Se agotaron los reintentos para la petición.")
 
-    def rest(
-        self, ruta: str, params: Optional[Dict[str, Any]] = None
-    ) -> Any:
+    def rest(self, ruta: str, params: Optional[Dict[str, Any]] = None) -> Any:
         """Realiza una petición REST a la API de GitHub.
 
         Si la respuesta es una lista, sigue automáticamente el encabezado
