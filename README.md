@@ -38,6 +38,13 @@ Posteriormente, el 1 de septiembre de 1997, se consolidó nuevamente la Carrera 
 
 <!-- seccion:proyectos -->
 ## 🚀 Proyectos
+
+Todos los proyectos son software libre institucional con licencia MIT, desarrollados por docentes y estudiantes de la carrera, por lo que cualquier persona puede usarlos, estudiarlos y mejorarlos.
+
+La lista de proyectos se actualiza automáticamente.
+
+<!-- auto:proyectos -->
+<!-- /auto:proyectos -->
 <!-- /seccion:proyectos -->
 
 <!-- seccion:lenguajes -->
