@@ -16,7 +16,7 @@
 Nuestra comunidad en cifras: el software libre que construimos juntos, docentes y estudiantes.
 
 <!-- auto:cifras -->
-<p align="center"><img src="https://img.shields.io/badge/Proyectos-6-blue" alt="Proyectos: 6"> <img src="https://img.shields.io/badge/Estrellas-15-blue" alt="Estrellas: 15"> <img src="https://img.shields.io/badge/Forks-395-blue" alt="Forks: 395"> <img src="https://img.shields.io/badge/Colaboradores-108-blue" alt="Colaboradores: 108"> <img src="https://img.shields.io/badge/Aportes-2990-blue" alt="Aportes: 2990"></p>
+<p align="center"><img src="https://img.shields.io/badge/Proyectos-6-blue" alt="Proyectos: 6"> <img src="https://img.shields.io/badge/Estrellas-16-blue" alt="Estrellas: 16"> <img src="https://img.shields.io/badge/Forks-395-blue" alt="Forks: 395"> <img src="https://img.shields.io/badge/Colaboradores-108-blue" alt="Colaboradores: 108"> <img src="https://img.shields.io/badge/Aportes-3014-blue" alt="Aportes: 3014"></p>
 <!-- /auto:cifras -->
 <!-- /seccion:cifras -->
 
@@ -53,9 +53,9 @@ La lista de proyectos se actualiza automáticamente.
 <!-- auto:proyectos -->
 | Proyecto | Descripción | Lenguaje | Licencia | ⭐ | 🍴 | Actualizado (AAAA-MM-DD) |
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| [ChuspaSocial](https://github.com/sis-inf/ChuspaSocial) | Plugin de Moodle que integra funcionalidades de red social (muros, perfiles, etc.) y un marketplace para la compra, venta y subasta de libros. | PHP | GPL-3.0 | 2 | 59 | 2026-11-09 |
-| [ChuspaPulse](https://github.com/sis-inf/ChuspaPulse) | Monitor de infraestructura ligero | C++ | MIT | 3 | 85 | 2026-11-09 |
-| [ChuspaNumeric](https://github.com/sis-inf/ChuspaNumeric) | Librería de métodos numéricos | JavaScript | MIT | 2 | 73 | 2026-11-09 |
+| [ChuspaSocial](https://github.com/sis-inf/ChuspaSocial) | Plugin de Moodle que integra funcionalidades de red social (muros, perfiles, etc.) y un marketplace para la compra, venta y subasta de libros. | PHP | GPL-3.0 | 2 | 59 | 2026-11-10 |
+| [ChuspaNumeric](https://github.com/sis-inf/ChuspaNumeric) | Librería de métodos numéricos | JavaScript | MIT | 2 | 73 | 2026-11-10 |
+| [ChuspaPulse](https://github.com/sis-inf/ChuspaPulse) | Monitor de infraestructura ligero | C++ | MIT | 4 | 85 | 2026-11-10 |
 | [ChuspaDB](https://github.com/sis-inf/ChuspaDB) | Gestor de base de datos | Java | MIT | 4 | 70 | 2026-11-09 |
 | [ChuspaCalc](https://github.com/sis-inf/ChuspaCalc) | Suite de herramientas para ingeniería | Python | MIT | 4 | 90 | 2026-11-09 |
 | [ChuspaOlimpiada](https://github.com/sis-inf/ChuspaOlimpiada) | Gestión de Inscripciones para Olimpiada Científica de la FNI | — | MIT | 0 | 18 | 2026-11-04 |
@@ -94,11 +94,11 @@ Agradecemos a los docentes y estudiantes que contribuyen en nuestros proyectos. 
     <td align="center"><a href="https://github.com/PXNDX-coder"><img src="https://github.com/PXNDX-coder.png?size=80" width="60" alt="PXNDX-coder"></a><br>PXNDX-coder<br>74</td>
     <td align="center"><a href="https://github.com/villca06carlos24-a11y"><img src="https://github.com/villca06carlos24-a11y.png?size=80" width="60" alt="villca06carlos24-a11y"></a><br>villca06carlos24-a11y<br>71</td>
     <td align="center"><a href="https://github.com/aaraonmh24"><img src="https://github.com/aaraonmh24.png?size=80" width="60" alt="aaraonmh24"></a><br>aaraonmh24<br>70</td>
-    <td align="center"><a href="https://github.com/AldoStevenVictorPlaza"><img src="https://github.com/AldoStevenVictorPlaza.png?size=80" width="60" alt="AldoStevenVictorPlaza"></a><br>AldoStevenVictorPlaza<br>62</td>
+    <td align="center"><a href="https://github.com/Jairo-D-Medrano"><img src="https://github.com/Jairo-D-Medrano.png?size=80" width="60" alt="Jairo-D-Medrano"></a><br>Jairo-D-Medrano<br>63</td>
   </tr>
   <tr>
+    <td align="center"><a href="https://github.com/AldoStevenVictorPlaza"><img src="https://github.com/AldoStevenVictorPlaza.png?size=80" width="60" alt="AldoStevenVictorPlaza"></a><br>AldoStevenVictorPlaza<br>62</td>
     <td align="center"><a href="https://github.com/eafp-pixel"><img src="https://github.com/eafp-pixel.png?size=80" width="60" alt="eafp-pixel"></a><br>eafp-pixel<br>59</td>
-    <td align="center"><a href="https://github.com/Jairo-D-Medrano"><img src="https://github.com/Jairo-D-Medrano.png?size=80" width="60" alt="Jairo-D-Medrano"></a><br>Jairo-D-Medrano<br>58</td>
     <td align="center"><a href="https://github.com/Promayki"><img src="https://github.com/Promayki.png?size=80" width="60" alt="Promayki"></a><br>Promayki<br>57</td>
     <td align="center"><a href="https://github.com/denpimen08-debug"><img src="https://github.com/denpimen08-debug.png?size=80" width="60" alt="denpimen08-debug"></a><br>denpimen08-debug<br>53</td>
     <td align="center"><a href="https://github.com/TheLanorRR"><img src="https://github.com/TheLanorRR.png?size=80" width="60" alt="TheLanorRR"></a><br>TheLanorRR<br>52</td>
@@ -128,9 +128,9 @@ Agradecemos a los docentes y estudiantes que contribuyen en nuestros proyectos. 
 | 2 | [PXNDX-coder](https://github.com/PXNDX-coder) | 74 | 0 | 74 |
 | 3 | [villca06carlos24-a11y](https://github.com/villca06carlos24-a11y) | 71 | 0 | 71 |
 | 4 | [aaraonmh24](https://github.com/aaraonmh24) | 70 | 0 | 70 |
-| 5 | [AldoStevenVictorPlaza](https://github.com/AldoStevenVictorPlaza) | 62 | 0 | 62 |
-| 6 | [eafp-pixel](https://github.com/eafp-pixel) | 59 | 0 | 59 |
-| 7 | [Jairo-D-Medrano](https://github.com/Jairo-D-Medrano) | 58 | 0 | 58 |
+| 5 | [Jairo-D-Medrano](https://github.com/Jairo-D-Medrano) | 63 | 0 | 63 |
+| 6 | [AldoStevenVictorPlaza](https://github.com/AldoStevenVictorPlaza) | 62 | 0 | 62 |
+| 7 | [eafp-pixel](https://github.com/eafp-pixel) | 59 | 0 | 59 |
 | 8 | [Promayki](https://github.com/Promayki) | 57 | 0 | 57 |
 | 9 | [denpimen08-debug](https://github.com/denpimen08-debug) | 53 | 0 | 53 |
 | 10 | [TheLanorRR](https://github.com/TheLanorRR) | 52 | 0 | 52 |
@@ -152,11 +152,11 @@ Agradecemos a los docentes y estudiantes que contribuyen en nuestros proyectos. 
 | 26 | [Crackgol](https://github.com/Crackgol) | 44 | 0 | 44 |
 | 27 | [Marushan-code](https://github.com/Marushan-code) | 44 | 0 | 44 |
 | 28 | [mrocabado-dev](https://github.com/mrocabado-dev) | 44 | 0 | 44 |
-| 29 | [jamescross12344-collab](https://github.com/jamescross12344-collab) | 42 | 0 | 42 |
-| 30 | [NandoTheDreamer](https://github.com/NandoTheDreamer) | 42 | 0 | 42 |
-| 31 | [unknowangxl](https://github.com/unknowangxl) | 42 | 0 | 42 |
-| 32 | [gonzalesstifalejandro-alt](https://github.com/gonzalesstifalejandro-alt) | 41 | 0 | 41 |
-| 33 | [Shadogshow](https://github.com/Shadogshow) | 41 | 0 | 41 |
+| 29 | [Shadogshow](https://github.com/Shadogshow) | 43 | 0 | 43 |
+| 30 | [jamescross12344-collab](https://github.com/jamescross12344-collab) | 42 | 0 | 42 |
+| 31 | [NandoTheDreamer](https://github.com/NandoTheDreamer) | 42 | 0 | 42 |
+| 32 | [unknowangxl](https://github.com/unknowangxl) | 42 | 0 | 42 |
+| 33 | [gonzalesstifalejandro-alt](https://github.com/gonzalesstifalejandro-alt) | 41 | 0 | 41 |
 | 34 | [edsonhuanaco-commits](https://github.com/edsonhuanaco-commits) | 40 | 0 | 40 |
 | 35 | [ErnestoEd67](https://github.com/ErnestoEd67) | 40 | 0 | 40 |
 | 36 | [maiandream](https://github.com/maiandream) | 40 | 0 | 40 |
@@ -172,36 +172,36 @@ Agradecemos a los docentes y estudiantes que contribuyen en nuestros proyectos. 
 | 46 | [JuanPinaya](https://github.com/JuanPinaya) | 34 | 0 | 34 |
 | 47 | [condoriamith11-cmd](https://github.com/condoriamith11-cmd) | 33 | 0 | 33 |
 | 48 | [DennisL505](https://github.com/DennisL505) | 33 | 0 | 33 |
-| 49 | [CCMGCCMG](https://github.com/CCMGCCMG) | 31 | 0 | 31 |
-| 50 | [melanyw777](https://github.com/melanyw777) | 31 | 0 | 31 |
-| 51 | [danielamejia-101](https://github.com/danielamejia-101) | 29 | 0 | 29 |
-| 52 | [Howbiie](https://github.com/Howbiie) | 28 | 0 | 28 |
-| 53 | [jhonatancalderon-hash](https://github.com/jhonatancalderon-hash) | 27 | 0 | 27 |
-| 54 | [artax-gif](https://github.com/artax-gif) | 26 | 0 | 26 |
-| 55 | [deeviX-41](https://github.com/deeviX-41) | 25 | 0 | 25 |
-| 56 | [Ka-rri](https://github.com/Ka-rri) | 25 | 0 | 25 |
-| 57 | [senju325](https://github.com/senju325) | 25 | 0 | 25 |
+| 49 | [senju325](https://github.com/senju325) | 32 | 0 | 32 |
+| 50 | [CCMGCCMG](https://github.com/CCMGCCMG) | 31 | 0 | 31 |
+| 51 | [melanyw777](https://github.com/melanyw777) | 31 | 0 | 31 |
+| 52 | [danielamejia-101](https://github.com/danielamejia-101) | 29 | 0 | 29 |
+| 53 | [Howbiie](https://github.com/Howbiie) | 28 | 0 | 28 |
+| 54 | [jhonatancalderon-hash](https://github.com/jhonatancalderon-hash) | 27 | 0 | 27 |
+| 55 | [artax-gif](https://github.com/artax-gif) | 26 | 0 | 26 |
+| 56 | [deeviX-41](https://github.com/deeviX-41) | 25 | 0 | 25 |
+| 57 | [Ka-rri](https://github.com/Ka-rri) | 25 | 0 | 25 |
 | 58 | [CzruAyna](https://github.com/CzruAyna) | 24 | 0 | 24 |
 | 59 | [brayaDosantos](https://github.com/brayaDosantos) | 23 | 0 | 23 |
 | 60 | [NICOLEROQUE0](https://github.com/NICOLEROQUE0) | 23 | 0 | 23 |
-| 61 | [mary13761](https://github.com/mary13761) | 21 | 0 | 21 |
-| 62 | [akasoem1703](https://github.com/akasoem1703) | 20 | 0 | 20 |
-| 63 | [Raquel40002](https://github.com/Raquel40002) | 20 | 0 | 20 |
-| 64 | [Carlosx334](https://github.com/Carlosx334) | 19 | 0 | 19 |
-| 65 | [edwinbarreto-cmd](https://github.com/edwinbarreto-cmd) | 19 | 0 | 19 |
-| 66 | [UlisesCor29](https://github.com/UlisesCor29) | 19 | 0 | 19 |
-| 67 | [saulhuanca-tech](https://github.com/saulhuanca-tech) | 16 | 0 | 16 |
-| 68 | [axelclaros](https://github.com/axelclaros) | 15 | 0 | 15 |
-| 69 | [Axl20-ai](https://github.com/Axl20-ai) | 15 | 0 | 15 |
-| 70 | [eansparedes55-arch](https://github.com/eansparedes55-arch) | 15 | 0 | 15 |
-| 71 | [Luza25-A](https://github.com/Luza25-A) | 14 | 0 | 14 |
-| 72 | [KevinAzC](https://github.com/KevinAzC) | 13 | 0 | 13 |
-| 73 | [angelymiranda-ctrl](https://github.com/angelymiranda-ctrl) | 12 | 0 | 12 |
-| 74 | [daniel-grover-ignacio-riveros](https://github.com/daniel-grover-ignacio-riveros) | 12 | 0 | 12 |
-| 75 | [herreracalizayaherlan-ops](https://github.com/herreracalizayaherlan-ops) | 12 | 0 | 12 |
-| 76 | [pabloalonzo-cloud](https://github.com/pabloalonzo-cloud) | 12 | 0 | 12 |
-| 77 | [siacarahelen-sketch](https://github.com/siacarahelen-sketch) | 12 | 0 | 12 |
-| 78 | [lilianBerriosf](https://github.com/lilianBerriosf) | 11 | 0 | 11 |
+| 61 | [UlisesCor29](https://github.com/UlisesCor29) | 23 | 0 | 23 |
+| 62 | [mary13761](https://github.com/mary13761) | 21 | 0 | 21 |
+| 63 | [akasoem1703](https://github.com/akasoem1703) | 20 | 0 | 20 |
+| 64 | [Raquel40002](https://github.com/Raquel40002) | 20 | 0 | 20 |
+| 65 | [Carlosx334](https://github.com/Carlosx334) | 19 | 0 | 19 |
+| 66 | [edwinbarreto-cmd](https://github.com/edwinbarreto-cmd) | 19 | 0 | 19 |
+| 67 | [lilianBerriosf](https://github.com/lilianBerriosf) | 16 | 0 | 16 |
+| 68 | [saulhuanca-tech](https://github.com/saulhuanca-tech) | 16 | 0 | 16 |
+| 69 | [axelclaros](https://github.com/axelclaros) | 15 | 0 | 15 |
+| 70 | [Axl20-ai](https://github.com/Axl20-ai) | 15 | 0 | 15 |
+| 71 | [eansparedes55-arch](https://github.com/eansparedes55-arch) | 15 | 0 | 15 |
+| 72 | [Luza25-A](https://github.com/Luza25-A) | 14 | 0 | 14 |
+| 73 | [herreracalizayaherlan-ops](https://github.com/herreracalizayaherlan-ops) | 13 | 0 | 13 |
+| 74 | [KevinAzC](https://github.com/KevinAzC) | 13 | 0 | 13 |
+| 75 | [angelymiranda-ctrl](https://github.com/angelymiranda-ctrl) | 12 | 0 | 12 |
+| 76 | [daniel-grover-ignacio-riveros](https://github.com/daniel-grover-ignacio-riveros) | 12 | 0 | 12 |
+| 77 | [pabloalonzo-cloud](https://github.com/pabloalonzo-cloud) | 12 | 0 | 12 |
+| 78 | [siacarahelen-sketch](https://github.com/siacarahelen-sketch) | 12 | 0 | 12 |
 | 79 | [magalylucas-beep](https://github.com/magalylucas-beep) | 11 | 0 | 11 |
 | 80 | [KevinMoreira2324](https://github.com/KevinMoreira2324) | 10 | 0 | 10 |
 | 81 | [alizarbelen15](https://github.com/alizarbelen15) | 9 | 0 | 9 |
