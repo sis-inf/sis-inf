@@ -26,7 +26,7 @@ El profesional en Ingeniería de Sistemas está capacitado para analizar proceso
 
 - **Duración:** 5 años (10 semestres).
 - **Título que otorga:** Ingeniero/a de Sistemas.
-- **Malla curricular oficial:** [Plan de Estudios de Ingeniería de Sistemas - FNI UTO](https://www.fni.uto.edu.bo/index.php/carreras/ing-sistemas)
+- **Malla curricular oficial:** [Plan de Estudios de Ingeniería de Sistemas - FNI UTO](https://www.sisinf.fni.uto.edu.bo/sistemas/)
 
 ## Ingeniería Informática
 
@@ -60,7 +60,7 @@ Canales oficiales de la Carrera de Ingeniería de Sistemas e Ingeniería Inform�
 ### Enlaces oficiales
 
 - [Historia de la Carrera de Ingeniería de Sistemas e Informática – FNI/UTO](https://www.sisinf.fni.uto.edu.bo/historia/)
-- [Plan de Estudios de Ingeniería de Sistemas – FNI/UTO](https://www.fni.uto.edu.bo/index.php/carreras/ing-sistemas)
+- [Plan de Estudios de Ingeniería de Sistemas – FNI/UTO](https://www.sisinf.fni.uto.edu.bo/sistemas/)
 - [Plan de Estudios de Ingeniería Informática – FNI/UTO](https://www.sisinf.fni.uto.edu.bo/informatica/)
 - [Universidad Técnica de Oruro](https://www.uto.edu.bo/)
 

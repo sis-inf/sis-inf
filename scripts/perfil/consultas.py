@@ -8,8 +8,6 @@ import logging
 from typing import Any, Callable, Dict, List, Optional, Tuple
 from urllib.parse import urlencode
 
-import requests
-
 logger = logging.getLogger(__name__)
 
 MAX_INTENTOS = 2
@@ -54,7 +52,9 @@ def _con_reintentos(consulta: Callable[[], Any], descripcion: str) -> Any:
     for intento in range(1, MAX_INTENTOS + 1):
         try:
             return consulta()
-        except requests.exceptions.Timeout:
+        except (TimeoutError, Exception) as e:
+            if not (isinstance(e, TimeoutError) or "timeout" in type(e).__name__.lower()):
+                raise
             if intento < MAX_INTENTOS:
                 logger.warning(
                     "Timeout en %s. Reintentando (%s/%s).",
@@ -71,10 +71,14 @@ def _con_reintentos(consulta: Callable[[], Any], descripcion: str) -> Any:
     return None
 
 
-def _rest(cliente: Any, endpoint: str) -> Any:
+def _rest(
+    cliente: Any, endpoint: str, params: Optional[Dict[str, Any]] = None
+) -> Any:
     """Ejecuta una consulta REST (GET) con el cliente."""
     return _con_reintentos(
-        lambda: cliente.rest(endpoint),
+        lambda: cliente.rest(endpoint, params=params)
+        if params is not None
+        else cliente.rest(endpoint),
         f"consulta REST {endpoint}",
     )
 
@@ -116,6 +120,8 @@ def _prs_fusionados(
 
         for nodo in conexion.get("nodes") or []:
             if not nodo:
+                continue
+            if nodo.get("state") and nodo.get("state") != "MERGED":
                 continue
             autor = (nodo.get("author") or {}).get("login") or "ghost"
             prs.append({"repo": repo, "autor": autor})
@@ -175,23 +181,22 @@ def obtener_aportes(
 
     Args:
         cliente: Cliente con el método graphql(query, variables).
-        usuario (str): Usuario de GitHub (parte del contrato; no se usa para
-            filtrar, porque se cuentan los aportes de todos los autores).
-        nombres_repos (List[str]): Lista de repositorios ('owner/name').
+        usuario (str): Usuario de GitHub.
+        nombres_repos (List[str]): Lista de repositorios ('owner/name' o 'name').
 
     Returns:
         Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]: (prs, commits) donde
         prs = [{'repo', 'autor'}] (autor nulo se vuelve 'ghost') y
         commits = [{'repo', 'autor', 'sha'}].
     """
-    del usuario
     prs: List[Dict[str, Any]] = []
     commits: List[Dict[str, Any]] = []
 
     for repo in nombres_repos:
-        if "/" not in repo:
-            continue
-        owner, name = repo.split("/", 1)
+        if "/" in repo:
+            owner, name = repo.split("/", 1)
+        else:
+            owner, name = usuario, repo
         prs.extend(_prs_fusionados(cliente, repo, owner, name))
         commits.extend(_commits_directos(cliente, repo, owner, name))
 
@@ -207,17 +212,17 @@ def obtener_lenguajes(
 
     Args:
         cliente: Cliente REST.
-        usuario (str): Usuario de GitHub (parte del contrato; no se usa).
-        nombres_repos (List[str]): Lista de repositorios ('owner/name').
+        usuario (str): Usuario de GitHub.
+        nombres_repos (List[str]): Lista de repositorios ('owner/name' o 'name').
 
     Returns:
         Dict[str, Dict[str, int]]: {repo: {lenguaje: bytes}}.
     """
-    del usuario
     resultado: Dict[str, Dict[str, int]] = {}
 
     for repo in nombres_repos:
-        respuesta = _rest(cliente, f"/repos/{repo}/languages")
+        repo_path = repo if "/" in repo else f"{usuario}/{repo}"
+        respuesta = _rest(cliente, f"/repos/{repo_path}/languages")
         resultado[repo] = respuesta if isinstance(respuesta, dict) else {}
 
     return resultado
@@ -236,8 +241,11 @@ def obtener_primeras_issues(cliente: Any, usuario: str) -> Dict[str, Any]:
         Dict[str, Any]: {'total': int,
         'items': [{'titulo': str, 'url': str, 'repo': str}]}.
     """
-    q = f'user:{usuario} label:"good first issue" state:open is:issue'
-    respuesta = _rest(cliente, f"/search/issues?{urlencode({'q': q})}")
+    params = {
+        "q": f'user:{usuario} label:"good first issue" state:open is:issue',
+        "per_page": 100,
+    }
+    respuesta = _rest(cliente, "/search/issues", params=params)
     if not isinstance(respuesta, dict):
         return {"total": 0, "items": []}
 

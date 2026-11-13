@@ -7,7 +7,7 @@ Una GitHub Action ejecuta el script `scripts/actualizar_perfil.py`, que consulta
 **Bloques que actualiza:**
 
 | Bloque | Contenido |
-|---|---|
+| --- | --- |
 | `cifras` | Línea de insignias con la cantidad de proyectos, estrellas, forks, colaboradores y aportes. |
 | `proyectos` | Listado de los proyectos de la organización. |
 | `lenguajes` | Lenguajes de programación usados en los proyectos. |
@@ -44,10 +44,6 @@ Cada **Pull Request aceptado** cuenta como 1 aporte, y cada **commit directo a l
 - Los commits cuyo correo no esté vinculado a una cuenta de GitHub, porque la API no puede atribuirlos a ninguna persona.
 
 **Cómo se resuelven los empates:** cuando dos personas tienen el mismo total de aportes, se ordenan alfabéticamente por su nombre de usuario, sin distinguir mayúsculas de minúsculas. El criterio está implementado en `scripts/perfil/secciones/colaboradores.py`.
-
-## Cómo ejecutarlo localmente
-
-## Cómo excluir un repositorio
 
 ## Al publicar un proyecto privado
 
@@ -108,7 +104,6 @@ gh workflow run actualizar-perfil.yml --repo sis-inf/sis-inf
 1. Espera a que la ejecución termine con la marca verde en **Actions**.
 2. Abre el perfil de la organización y confirma que el proyecto aparece en el bloque «Proyectos» y que los números de `cifras` subieron.
 3. Si no aparece, revisa que la ejecución no haya fallado, que el repositorio sea público y que no esté excluido. Si el contenido generado no cambió, la Action no crea ningún commit.
-
 
 ## Limitaciones
 
@@ -172,6 +167,7 @@ Agrega el nombre del repositorio, sin el nombre de la organización, a la lista 
 Este cambio se propone con un Pull Request a este repositorio. Úsala cuando no tengas permisos de administración sobre el repositorio que quieres excluir.
 
 En ambos casos, el repositorio deja de aparecer en el perfil a partir de la siguiente ejecución de la Action. Para que vuelva a aparecer, quita el topic o elimina su nombre de la lista.
+
 ## Cómo ejecutarlo localmente
 
 Requisitos: Python 3.12 y una copia local del repositorio. Todos los comandos se ejecutan desde la carpeta raíz del repositorio.

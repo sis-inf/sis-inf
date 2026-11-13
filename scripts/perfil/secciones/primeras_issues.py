@@ -13,14 +13,14 @@ IDIOMA_POR_DEFECTO = "es"
 
 TEXTOS = {
     "es": {
-        "total_cero": "No hay primeras issues abiertas por ahora.",
+        "total_cero": "No hay primeras issues abiertas por ahora (0).",
         "total_uno": "Hay **{total}** primera issue abierta para nuevos colaboradores:",
         "total_varias": "Hay **{total}** primeras issues abiertas para nuevos colaboradores:",
         "en": "en",
         "ver_todas": "Ver todas las primeras issues",
     },
     "en": {
-        "total_cero": "There are no open first issues right now.",
+        "total_cero": "There are no open first issues right now (0).",
         "total_uno": "There is **{total}** open first issue for new contributors:",
         "total_varias": "There are **{total}** open first issues for new contributors:",
         "en": "in",

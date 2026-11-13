@@ -70,8 +70,11 @@ def _escapar_insignia(texto):
 
 
 def _formatear(porcentaje):
-    """Devuelve el porcentaje con un decimal, por ejemplo '62.5'."""
-    return f"{float(porcentaje):.1f}"
+    """Devuelve el porcentaje con un decimal, por ejemplo '62.5', o dos si es menor a 0.1."""
+    val = float(porcentaje)
+    if 0 < val < 0.1:
+        return f"{val:.2f}"
+    return f"{val:.1f}"
 
 
 def _insignia(nombre, porcentaje, textos):

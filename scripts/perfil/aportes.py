@@ -29,7 +29,14 @@ def obtener_login(autor: Any) -> str:
     if isinstance(autor, str):
         login = autor
     elif isinstance(autor, dict):
-        login = autor.get("login")
+        if "login" in autor:
+            login = autor.get("login")
+        elif "user" in autor:
+            return obtener_login(autor.get("user"))
+        elif "author" in autor:
+            return obtener_login(autor.get("author"))
+        else:
+            login = None
     else:
         login = getattr(autor, "login", None)
 
@@ -82,19 +89,20 @@ def _es_contable(login: str, excluidas: set[str]) -> bool:
     )
 
 
-def _clave_orden(fila: dict[str, Any]) -> tuple[int, str, str]:
+def _clave_orden(fila: dict[str, Any]) -> tuple[int, int, str, str]:
     """Clave de ordenamiento de una fila de aportes.
 
     Args:
-        fila (dict[str, Any]): Fila con las claves ``login`` y ``aportes``.
+        fila (dict[str, Any]): Fila con las claves ``login``, ``prs`` y ``aportes``.
 
     Returns:
-        tuple[int, str, str]: Total de aportes en negativo (mayor primero),
-            login normalizado con casefold (orden alfabético sin distinguir
-            mayúsculas) y login original para que el orden sea determinista.
+        tuple[int, int, str, str]: Total de aportes en negativo (mayor primero),
+            prs en negativo (mayor primero), login normalizado con casefold
+            (orden alfabético sin distinguir mayúsculas) y login original
+            para que el orden sea determinista.
     """
     login: str = fila["login"]
-    return (-fila["aportes"], login.casefold(), login)
+    return (-fila["aportes"], -fila["prs"], login.casefold(), login)
 
 
 def contar_aportes(
@@ -128,7 +136,12 @@ def contar_aportes(
         for elemento in elementos or []:
             if not isinstance(elemento, dict):
                 continue
-            login = obtener_login(elemento.get("autor"))
+            autor = (
+                elemento.get("autor")
+                or elemento.get("user")
+                or elemento.get("author")
+            )
+            login = obtener_login(autor)
             if _es_contable(login, excluidas):
                 contador[login] += 1
 
