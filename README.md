@@ -16,7 +16,7 @@
 Nuestra comunidad en cifras: el software libre que construimos juntos, docentes y estudiantes.
 
 <!-- auto:cifras -->
-<p align="center"><img src="https://img.shields.io/badge/Proyectos-6-blue" alt="Proyectos: 6"> <img src="https://img.shields.io/badge/Estrellas-16-blue" alt="Estrellas: 16"> <img src="https://img.shields.io/badge/Forks-436-blue" alt="Forks: 436"> <img src="https://img.shields.io/badge/Colaboradores-111-blue" alt="Colaboradores: 111"> <img src="https://img.shields.io/badge/Aportes-3543-blue" alt="Aportes: 3543"></p>
+<p align="center"><img src="https://img.shields.io/badge/Proyectos-6-blue" alt="Proyectos: 6"> <img src="https://img.shields.io/badge/Estrellas-16-blue" alt="Estrellas: 16"> <img src="https://img.shields.io/badge/Forks-437-blue" alt="Forks: 437"> <img src="https://img.shields.io/badge/Colaboradores-111-blue" alt="Colaboradores: 111"> <img src="https://img.shields.io/badge/Aportes-3555-blue" alt="Aportes: 3555"></p>
 <!-- /auto:cifras -->
 <!-- /seccion:cifras -->
 
@@ -53,10 +53,10 @@ La lista de proyectos se actualiza automáticamente.
 <!-- auto:proyectos -->
 | Proyecto | Descripción | Lenguaje | Licencia | ⭐ | 🍴 | Actualizado (AAAA-MM-DD) |
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| [ChuspaCalc](https://github.com/sis-inf/ChuspaCalc) | Suite de herramientas para ingeniería | Python | MIT | 4 | 100 | 2026-11-21 |
-| [ChuspaNumeric](https://github.com/sis-inf/ChuspaNumeric) | Librería de métodos numéricos | JavaScript | MIT | 2 | 78 | 2026-11-20 |
+| [ChuspaCalc](https://github.com/sis-inf/ChuspaCalc) | Suite de herramientas para ingeniería | Python | MIT | 4 | 101 | 2026-11-22 |
+| [ChuspaNumeric](https://github.com/sis-inf/ChuspaNumeric) | Librería de métodos numéricos | JavaScript | MIT | 2 | 78 | 2026-11-22 |
+| [ChuspaDB](https://github.com/sis-inf/ChuspaDB) | Gestor de base de datos | Java | MIT | 4 | 77 | 2026-11-22 |
 | [ChuspaPulse](https://github.com/sis-inf/ChuspaPulse) | Monitor de infraestructura ligero | C++ | MIT | 4 | 91 | 2026-11-20 |
-| [ChuspaDB](https://github.com/sis-inf/ChuspaDB) | Gestor de base de datos | Java | MIT | 4 | 77 | 2026-11-20 |
 | [ChuspaOlimpiada](https://github.com/sis-inf/ChuspaOlimpiada) | Gestión de Inscripciones para Olimpiada Científica de la FNI | — | MIT | 0 | 30 | 2026-11-18 |
 | [ChuspaSocial](https://github.com/sis-inf/ChuspaSocial) | Plugin de Moodle que integra funcionalidades de red social (muros, perfiles, etc.) y un marketplace para la compra, venta y subasta de libros. | PHP | GPL-3.0 | 2 | 60 | 2026-11-15 |
 <!-- /auto:proyectos -->
@@ -162,14 +162,14 @@ Agradecemos a los docentes y estudiantes que contribuyen en nuestros proyectos. 
 | 36 | [Crackgol](https://github.com/Crackgol) | 44 | 0 | 44 |
 | 37 | [Marushan-code](https://github.com/Marushan-code) | 44 | 0 | 44 |
 | 38 | [aracellymamani-arch](https://github.com/aracellymamani-arch) | 43 | 0 | 43 |
-| 39 | [eric-robert-vargas-morales](https://github.com/eric-robert-vargas-morales) | 42 | 0 | 42 |
-| 40 | [NandoTheDreamer](https://github.com/NandoTheDreamer) | 42 | 0 | 42 |
-| 41 | [unknowangxl](https://github.com/unknowangxl) | 42 | 0 | 42 |
-| 42 | [dennis-choque](https://github.com/dennis-choque) | 41 | 0 | 41 |
-| 43 | [edsonhuanaco-commits](https://github.com/edsonhuanaco-commits) | 40 | 0 | 40 |
-| 44 | [maiandream](https://github.com/maiandream) | 40 | 0 | 40 |
-| 45 | [MariaPS0023](https://github.com/MariaPS0023) | 40 | 0 | 40 |
-| 46 | [KevinAzC](https://github.com/KevinAzC) | 39 | 0 | 39 |
+| 39 | [KevinAzC](https://github.com/KevinAzC) | 43 | 0 | 43 |
+| 40 | [eric-robert-vargas-morales](https://github.com/eric-robert-vargas-morales) | 42 | 0 | 42 |
+| 41 | [NandoTheDreamer](https://github.com/NandoTheDreamer) | 42 | 0 | 42 |
+| 42 | [unknowangxl](https://github.com/unknowangxl) | 42 | 0 | 42 |
+| 43 | [dennis-choque](https://github.com/dennis-choque) | 41 | 0 | 41 |
+| 44 | [edsonhuanaco-commits](https://github.com/edsonhuanaco-commits) | 40 | 0 | 40 |
+| 45 | [maiandream](https://github.com/maiandream) | 40 | 0 | 40 |
+| 46 | [MariaPS0023](https://github.com/MariaPS0023) | 40 | 0 | 40 |
 | 47 | [Atoxny](https://github.com/Atoxny) | 37 | 0 | 37 |
 | 48 | [claudiaatanacio-cloud](https://github.com/claudiaatanacio-cloud) | 37 | 0 | 37 |
 | 49 | [CCMGCCMG](https://github.com/CCMGCCMG) | 36 | 0 | 36 |
@@ -191,16 +191,16 @@ Agradecemos a los docentes y estudiantes que contribuyen en nuestros proyectos. 
 | 65 | [daniel-grover-ignacio-riveros](https://github.com/daniel-grover-ignacio-riveros) | 26 | 0 | 26 |
 | 66 | [deeviX-41](https://github.com/deeviX-41) | 25 | 0 | 25 |
 | 67 | [Ka-rri](https://github.com/Ka-rri) | 25 | 0 | 25 |
-| 68 | [magalylucas-beep](https://github.com/magalylucas-beep) | 24 | 0 | 24 |
+| 68 | [magalylucas-beep](https://github.com/magalylucas-beep) | 25 | 0 | 25 |
 | 69 | [axelclaros](https://github.com/axelclaros) | 23 | 0 | 23 |
 | 70 | [brayaDosantos](https://github.com/brayaDosantos) | 23 | 0 | 23 |
 | 71 | [NICOLEROQUE0](https://github.com/NICOLEROQUE0) | 23 | 0 | 23 |
-| 72 | [mary13761](https://github.com/mary13761) | 21 | 0 | 21 |
-| 73 | [akasoem1703](https://github.com/akasoem1703) | 20 | 0 | 20 |
-| 74 | [naydelinacho](https://github.com/naydelinacho) | 20 | 0 | 20 |
-| 75 | [Raquel40002](https://github.com/Raquel40002) | 20 | 0 | 20 |
-| 76 | [saulhuanca-tech](https://github.com/saulhuanca-tech) | 20 | 0 | 20 |
-| 77 | [siacarahelen-sketch](https://github.com/siacarahelen-sketch) | 20 | 0 | 20 |
+| 72 | [siacarahelen-sketch](https://github.com/siacarahelen-sketch) | 23 | 0 | 23 |
+| 73 | [mary13761](https://github.com/mary13761) | 21 | 0 | 21 |
+| 74 | [akasoem1703](https://github.com/akasoem1703) | 20 | 0 | 20 |
+| 75 | [naydelinacho](https://github.com/naydelinacho) | 20 | 0 | 20 |
+| 76 | [Raquel40002](https://github.com/Raquel40002) | 20 | 0 | 20 |
+| 77 | [saulhuanca-tech](https://github.com/saulhuanca-tech) | 20 | 0 | 20 |
 | 78 | [Carlosx334](https://github.com/Carlosx334) | 19 | 0 | 19 |
 | 79 | [dr442918-sys](https://github.com/dr442918-sys) | 17 | 0 | 17 |
 | 80 | [herreracalizayaherlan-ops](https://github.com/herreracalizayaherlan-ops) | 16 | 0 | 16 |
@@ -218,14 +218,14 @@ Agradecemos a los docentes y estudiantes que contribuyen en nuestros proyectos. 
 | 92 | [soraydayucra-ai](https://github.com/soraydayucra-ai) | 10 | 0 | 10 |
 | 93 | [alizarbelen15](https://github.com/alizarbelen15) | 9 | 0 | 9 |
 | 94 | [henryflors](https://github.com/henryflors) | 8 | 0 | 8 |
-| 95 | [crisleydi](https://github.com/crisleydi) | 7 | 0 | 7 |
-| 96 | [lazabejas0972-ai](https://github.com/lazabejas0972-ai) | 7 | 0 | 7 |
-| 97 | [misaelquisbert-a11y](https://github.com/misaelquisbert-a11y) | 7 | 0 | 7 |
-| 98 | [ninoskacotah](https://github.com/ninoskacotah) | 7 | 0 | 7 |
-| 99 | [jhas-ct](https://github.com/jhas-ct) | 6 | 0 | 6 |
-| 100 | [ValeriaRuthMitaVargas](https://github.com/ValeriaRuthMitaVargas) | 6 | 0 | 6 |
-| 101 | [AroN-ZX3D](https://github.com/AroN-ZX3D) | 4 | 0 | 4 |
-| 102 | [CR-cry](https://github.com/CR-cry) | 4 | 0 | 4 |
+| 95 | [ValeriaRuthMitaVargas](https://github.com/ValeriaRuthMitaVargas) | 8 | 0 | 8 |
+| 96 | [crisleydi](https://github.com/crisleydi) | 7 | 0 | 7 |
+| 97 | [jhas-ct](https://github.com/jhas-ct) | 7 | 0 | 7 |
+| 98 | [lazabejas0972-ai](https://github.com/lazabejas0972-ai) | 7 | 0 | 7 |
+| 99 | [misaelquisbert-a11y](https://github.com/misaelquisbert-a11y) | 7 | 0 | 7 |
+| 100 | [ninoskacotah](https://github.com/ninoskacotah) | 7 | 0 | 7 |
+| 101 | [CR-cry](https://github.com/CR-cry) | 5 | 0 | 5 |
+| 102 | [AroN-ZX3D](https://github.com/AroN-ZX3D) | 4 | 0 | 4 |
 | 103 | [DANIELXD22](https://github.com/DANIELXD22) | 2 | 0 | 2 |
 | 104 | [har5h1tha](https://github.com/har5h1tha) | 2 | 0 | 2 |
 | 105 | [qorexdevs](https://github.com/qorexdevs) | 2 | 0 | 2 |
